@@ -170,3 +170,26 @@ footer .btn-primary:hover {
     background-color: #ff4500;
     border-color: #ff4500;
 }
+
+.newsletter-banner {
+  background: url('https://via.placeholder.com/1920x800') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.newsletter-banner input {
+  margin-right: 10px;
+  border-radius: 0;
+}
+.newsletter-banner .btn {
+  border-radius: 0;
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+.newsletter-banner .btn:hover {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}

@@ -58,3 +58,27 @@ body {
     transform: translateY(-50%);
     color: #fff;
   }
+
+  footer {
+    background: linear-gradient(to bottom, #000000, #444444);
+    color: white;
+}
+footer a {
+    color: #ffffff;
+    transition: color 0.2s;
+}
+footer a:hover {
+    color: #dddddd;
+}
+footer .form-control {
+    border-radius: 0;
+}
+footer .btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+footer .btn-primary:hover {
+    background-color: #ff4500;
+    border-color: #ff4500;
+}

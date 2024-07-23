@@ -74,7 +74,77 @@ body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
+    color: #000;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .navbar-icons .nav-icon {
+    color: #000000;
+    font-size: 1em;
+    margin-left: 20px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .navbar-icons .nav-icon:hover {
+    color: #00a2ff;
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries */
+  
+  /* For tablets and smaller devices */
+  @media (max-width: 768px) {
+    .nav-link {
+      font-size: 1em;
+      margin-right: 0.5em;
+    }
+  
+    .navbar-brand {
+      font-size: 1.2em;
+    }
+  
+    .search-bar {
+      margin-left: 10px;
+    }
+  
+    .search-input {
+      width: 150px;
+    }
+  
+    .navbar-icons .nav-icon {
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 576px) {
+    .nav-link {
+      display: block;
+      margin: 0.5em 0;
+      font-size: 0.9em;
+    }
+  
+    .navbar-brand {
+      font-size: 1em;
+    }
+  
+    .search-input {
+      width: 100px;
+    }
+  
+    .navbar-icons {
+      display: none;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
   }
 
   footer {

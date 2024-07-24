@@ -223,6 +223,7 @@ footer .btn-primary:hover {
   border-color: #ff4500;
 }
 
+<<<<<<< HEAD
 /* Estilização dos cards */
 .category-cards {
   margin: 50px 0;
@@ -267,3 +268,79 @@ footer .btn-primary:hover {
 .category-card:hover {
   transform: scale(1.05);
 }
+=======
+.product-cards .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-cards .card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-cards .card-img-container::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.product-cards .card-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-cards .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
+
+.card-footer {
+  background: none;
+  border-top: none;
+  text-align: center;
+}
+
+.card-footer .btn {
+  background-image: linear-gradient(45deg, #007bff, #00d4ff);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+}
+
+.card-footer .btn:hover {
+  background-image: linear-gradient(45deg, #0056b3, #00a3cc);
+  transform: scale(1.05);
+}
+
+.card-footer .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+>>>>>>> d68578e81dc815e470d9c3d16aeb5651d0d8fe7c

@@ -1,195 +1,220 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-  }
-  
-  .navbar {
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 100%);
-  }
-  
-  .navbar-brand {
-    color: #000000 !important;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 100%);
+}
+
+.navbar-brand {
+  color: #000000 !important;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #000000 !important;
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+
+.nav-link:hover {
+  color: #00a2ff !important;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: none;
+}
+
+.dropdown-item {
+  color: #000;
+  font-size: 1em;
+}
+
+.dropdown-item:hover {
+  background-color: #00a2ff;
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.search-bar {
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-input {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  width: 250px;
+  border-color: #00a2ff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-icons .nav-icon {
+  color: #000000;
+  font-size: 1em;
+  margin-left: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-icons .nav-icon:hover {
+  color: #00a2ff;
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
   .nav-link {
-    color: #000000 !important;
-    margin-right: 1em;
-    font-size: 1.2em;
-  }
-  
-  .nav-link:hover {
-    color: #00a2ff !important;
-  }
-  
-  .dropdown-menu {
-    background-color: #ffffff;
-    border-radius: 0;
-    border: none;
-  }
-  
-  .dropdown-item {
-    color: #000;
-    font-size: 1em;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #00a2ff;
-    color: #fff;
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    color: #fff;
-  }
-  
-  .search-bar {
-    position: relative;
-    margin-left: 20px;
-  }
-  
-  .search-input {
-    border: 2px solid #fff;
-    border-radius: 20px;
-    padding: 5px 15px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .search-input:focus {
-    width: 250px;
-    border-color: #00a2ff;
-    background: rgba(255, 255, 255, 0.3);
-    color: #000;
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #000;
-  }
-  
-  .navbar-icons {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-  
-  .navbar-icons .nav-icon {
-    color: #000000;
-    font-size: 1em;
-    margin-left: 20px;
-    transition: color 0.3s, transform 0.3s;
-  }
-  
-  .navbar-icons .nav-icon:hover {
-    color: #00a2ff;
-    transform: scale(1.1);
-  }
-  
-  /* Media Queries */
-  
-  /* For tablets and smaller devices */
-  @media (max-width: 768px) {
-    .nav-link {
       font-size: 1em;
       margin-right: 0.5em;
-    }
-  
-    .navbar-brand {
+  }
+
+  .navbar-brand {
       font-size: 1.2em;
-    }
-  
-    .search-bar {
+  }
+
+  .search-bar {
       margin-left: 10px;
-    }
-  
-    .search-input {
+  }
+
+  .search-input {
       width: 150px;
-    }
-  
-    .navbar-icons .nav-icon {
+  }
+
+  .navbar-icons .nav-icon {
       font-size: 0.9em;
       margin-left: 10px;
-    }
   }
-  
-  /* For mobile devices */
-  @media (max-width: 576px) {
-    .nav-link {
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .nav-link {
       display: block;
       margin: 0.5em 0;
       font-size: 0.9em;
-    }
-  
-    .navbar-brand {
-      font-size: 1em;
-    }
-  
-    .search-input {
-      width: 100px;
-    }
-  
-    .navbar-icons {
-      display: none;
-    }
-  
-    .navbar-toggler {
-      display: block;
-    }
   }
 
-  footer {
-    background: linear-gradient(to bottom, #000000, #444444);
-    color: white;
+  .navbar-brand {
+      font-size: 1em;
+  }
+
+  .search-input {
+      width: 100px;
+  }
+
+  .navbar-icons {
+      display: none;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+}
+
+footer {
+  background: linear-gradient(to bottom, #000000, #444444);
+  color: white;
 }
 footer a {
-    color: #ffffff;
-    transition: color 0.2s;
+  color: #ffffff;
+  transition: color 0.2s;
 }
 footer a:hover {
-    color: #dddddd;
+  color: #dddddd;
 }
 footer .form-control {
-    border-radius: 0;
+  border-radius: 0;
 }
 footer .btn-primary {
-    background-color: #ff6600;
-    border-color: #ff6600;
-    transition: background-color 0.2s, border-color 0.2s;
+  background-color: #ff6600;
+  border-color: #ff6600;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 footer .btn-primary:hover {
-    background-color: #ff4500;
-    border-color: #ff4500;
+  background-color: #ff4500;
+  border-color: #ff4500;
 }
 
 .newsletter-banner {
-  background: url('https://via.placeholder.com/1920x800') no-repeat center center;
+  margin-bottom: 0; 
+  margin-top: 100px;
+}
+
+.newsletter-banner .newsletter-background {
+  background: url('https://img.freepik.com/fotos-premium/fundo-preto-moderno-futurista-abstrato-projeto-de-banner-grafico-de-tecnologia-dinamica-fundo-corporativo-vetorial_181182-738.jpg?w=1800') no-repeat center center;
   background-size: cover;
   color: white;
   padding: 80px 0;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 0;
 }
-.newsletter-banner input {
+
+.newsletter-banner h5 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.newsletter-banner p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.newsletter-banner input.newsletter-input {
+  border-radius: 5px;
+  border: none;
+  padding: 15px 20px;
+  width: 300px;
   margin-right: 10px;
-  border-radius: 0;
 }
-.newsletter-banner .btn {
-  border-radius: 0;
+
+.newsletter-banner button.newsletter-btn {
+  border-radius: 5px;
   background-color: #ff6600;
   border-color: #ff6600;
+  padding: 15px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.2s, border-color 0.2s;
 }
-.newsletter-banner .btn:hover {
+
+.newsletter-banner button.newsletter-btn:hover {
   background-color: #ff4500;
   border-color: #ff4500;
 }

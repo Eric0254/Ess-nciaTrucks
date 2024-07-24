@@ -223,7 +223,6 @@ footer .btn-primary:hover {
   border-color: #ff4500;
 }
 
-<<<<<<< HEAD
 /* Estilização dos cards */
 .category-cards {
   margin: 50px 0;
@@ -268,7 +267,6 @@ footer .btn-primary:hover {
 .category-card:hover {
   transform: scale(1.05);
 }
-=======
 .product-cards .card {
   border: none;
   border-radius: 10px;
@@ -343,4 +341,3 @@ footer .btn-primary:hover {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
->>>>>>> d68578e81dc815e470d9c3d16aeb5651d0d8fe7c

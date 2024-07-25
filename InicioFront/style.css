@@ -176,7 +176,7 @@ footer .btn-primary:hover {
 
 /*Estilização do banner de rodapé*/
 .newsletter-banner {
-  margin-bottom: 0; 
+  margin-bottom: 0;
   margin-top: 100px;
 }
 
@@ -199,18 +199,24 @@ footer .btn-primary:hover {
   margin-bottom: 30px;
 }
 
-.newsletter-banner input.newsletter-input {
-  border-radius: 5px;
+.newsletter-banner form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-banner input.form-control {
+  border-radius: 15px;
   border: none;
   padding: 15px 20px;
   width: 300px;
-  margin-right: 10px;
+  margin-right: 20px; /* Espaçamento entre o campo e o botão */
 }
 
-.newsletter-banner button.newsletter-btn {
-  border-radius: 5px;
-  background-color: #ff6600;
-  border-color: #ff6600;
+.newsletter-banner button.btn-primary {
+  border-radius: 15px;
+  background-color: #0077ff;
+  border-color: #0077ff;
   padding: 15px 20px;
   font-size: 1em;
   font-weight: bold;
@@ -218,32 +224,32 @@ footer .btn-primary:hover {
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-.newsletter-banner button.newsletter-btn:hover {
-  background-color: #ff4500;
-  border-color: #ff4500;
+.newsletter-banner button.btn-primary:hover {
+  background-color: #0026ff;
+  border-color: #0026ff;
 }
 
 /* Estilização dos cards */
 .category-cards {
   margin: 50px 0;
+  text-align: center;
 }
 
 .category-cards .container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: center; 
+  gap: 20px;
 }
 
 .category-card {
   position: relative;
   width: 100%;
-  flex: 1;
-  height: 300px;
+  max-width: 700px;
+  height: 200px;
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s;
-  min-width: 250px; /* Largura mínima dos cards */
+  min-width: 500px;
 }
 
 .category-card img {

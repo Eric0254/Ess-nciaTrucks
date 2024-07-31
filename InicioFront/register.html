@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="w-75">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Bem Vindo, faça seu cadastro</h3><br>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control rounded-pill" id="email" placeholder="Seu Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-email">Confirmar Email</label>
+                                <input type="email" class="form-control rounded-pill" id="confirm-email" placeholder="Confirme seu Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" class="form-control rounded-pill" id="phone" placeholder="Seu Telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control rounded-pill" id="cpf" placeholder="Seu CPF">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <input type="password" class="form-control rounded-pill" id="password" placeholder="Sua Senha">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirmar Senha</label>
+                                <input type="password" class="form-control rounded-pill" id="confirm-password" placeholder="Confirme sua Senha">
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block rounded-pill">Cadastrar</button>
+                
+                            <div class="text-center mt-3">
+                                <p>Já tem uma conta? <a href="login.html" class="text">Faça Login!</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-0 d-none d-md-block">
+                <img src="ft.jpg" alt="Illustration" class="img-fluid h-100 w-100">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
